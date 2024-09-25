@@ -168,7 +168,11 @@ address {
 /* Hero Section */
 
 .hero-section {
-    background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     padding: 188px 0;
 }
 
@@ -240,6 +244,7 @@ address {
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-text-content {
@@ -252,6 +257,38 @@ address {
 
 .team-sub-title {
     text-align: center;
+}
+
+.social-container {
+    display: flex;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.social-link {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+}
+
+.social-link:hover {
+    background-color: #404bbf;
+}
+
+.social-link-icon {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    fill: #f4f4fd;
 }
 
 
