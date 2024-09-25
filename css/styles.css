@@ -143,6 +143,8 @@ address {
     padding: 24px 0;
     font-weight: 500;
     color: #2e2f42;
+
+    position: relative;
 }
 
 .address-list {
@@ -156,14 +158,22 @@ address {
 }
 
 .header-item:hover,
-.header-item:focus,
-.header-item:active,
-.address-item:hover,
-.address-item:focus,
-.address-item:active {
+.address-item:hover {
     color: #404bbf;
 }
 
+.header-item:focus:after,
+.header-item:active:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+}
 
 /* Hero Section */
 
